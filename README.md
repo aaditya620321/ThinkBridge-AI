@@ -172,10 +172,10 @@ system_architecture:
 
 ## 👨‍💻 Author
 
-**Your Name**  
+**Aaditya Raj Pandey**  
 AI Developer & System Architect  
-📧 your.email@example.com  
-🌐 [LinkedIn](#) | [GitHub](#)
+📧 aaditya620321@gmail.com  
+
 
 ---
 
