@@ -36,17 +36,33 @@ To design a scalable, secure, and intelligent Gen AI chatbot that assists intern
 ### **High-Level Architecture Diagram**
 
 
-Mentor (Chat UI)
-↓
-Frontend (React / Streamlit)
-↓ WebSocket (for real-time chat)
-Backend (FastAPI)
-↓
-Gen AI Engine (LangChain + GPT + RAG + Vector DB)
-↓
-Data Layer (Airtable + Google Drive APIs)
-↓
-Database (PostgreSQL + Pinecone)
+system_architecture:
+  - mentor_interface: 
+      type: "Chat UI"
+      interface: "Natural language conversation"
+  - frontend:
+      framework: ["React", "Streamlit"]
+      connection: "WebSocket (real-time chat)"
+  - backend:
+      framework: "FastAPI"
+      functions: 
+        - "Request handling"
+        - "User session management"
+        - "Routing to AI Engine"
+  - gen_ai_engine:
+      components:
+        - "LangChain"
+        - "LLM: GPT / Claude"
+        - "RAG pipeline"
+        - "Vector Database (Pinecone / FAISS)"
+  - data_layer:
+      integrations:
+        - "Airtable API"
+        - "Google Drive API"
+  - databases:
+      - relational: "PostgreSQL (structured data)"
+      - vector: "Pinecone (semantic embeddings)"
+
 
 
 
